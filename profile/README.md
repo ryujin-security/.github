@@ -1,6 +1,6 @@
 # Ryujin Security 🐉
 
-Ryujin Security provides enterprise-grade security monitoring and management solutions.
+Ryujin Security security monitoring and management.
 
 ## Our Projects
 
