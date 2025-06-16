@@ -27,55 +27,59 @@ Web interface for security monitoring and management.
   
 ```mermaid
 graph TD
-    A[Ryujin Agent] --> B{TCP Connection}
-    B -->|Success| C[Send Registration Request]
-    B -->|Failed| D[Connection Failed]
-    C --> E[Manager: Validate Password]
-    E -->|Valid| F[Generate Certificates]
-    E -->|Invalid| G[Reject Registration]
-    F --> H[Send Credentials to Agent]
-    H --> I[Agent: Store Certificates]
-    I --> J[Start Heartbeat Loop]
-    J --> K[Send Heartbeat Every 5s]
-    K --> L[Manager: Update Agent Status]
-    L --> M{Agent Active?}
-    M -->|Yes| N[Continue Monitoring]
-    M -->|No| O[Mark as Disconnected]
-    N --> P[Collect System Data]
-    P --> Q[File Integrity Monitoring]
-    P --> R[System Inventory Collection]
-    P --> S[Security Event Detection]
-    Q --> T[Send FIM Data]
-    R --> U[Send Inventory Data]
-    S --> V[Send Security Events]
-    T --> W[Manager: Process Data]
-    U --> W
-    V --> W
-    W --> X[Store in Database]
-    X --> Y[WAF Processing]
-    Y --> Z[Dashboard Display]
-    Z --> AA[User Interface]
-    
-    subgraph "Agent Components"
-        P
-        Q
-        R
-        S
+    subgraph "Agent"
+        A[Ryujin Agent]
+        I[Store Certificates]
+        P[Collect System Data]
+        Q[File Integrity Monitoring]
+        R[System Inventory]
+        S[Security Events]
     end
     
-    subgraph "Manager Components"
-        E
-        F
-        L
-        W
-        X
-        Y
+    subgraph "Manager"
+        B{TLS Connection}
+        C[Registration Request]
+        E[Validate Password]
+        F[Generate Certificates]
+        G[Reject Registration]
+        H[Send Credentials]
+        L[Update Agent Status]
+        M{Agent Active?}
+        N[Continue Monitoring]
+        O[Mark Disconnected]
+        W[Process Data]
+        X[Store in Database]
+        Y[WAF Processing]
     end
     
-    subgraph "Dashboard Components"
-        Z
-        AA
+    subgraph "Dashboard"
+        Z[Display Data]
+        AA[User Interface]
     end
+    
+    A --> B
+    B -->|Success| C
+    B -->|Failed| G
+    C --> E
+    E -->|Valid| F
+    E -->|Invalid| G
+    F --> H
+    H --> I
+    I --> L
+    L --> M
+    M -->|Yes| N
+    M -->|No| O
+    N --> P
+    P --> Q
+    P --> R
+    P --> S
+    Q --> W
+    R --> W
+    S --> W
+    W --> X
+    X --> Y
+    Y --> Z
+    Z --> AA
 ```
 
 All projects are created by Ryan Rizky Pratama & Reja Revaldy F 
