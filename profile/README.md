@@ -32,4 +32,4 @@ Modern web interface for real-time security monitoring and management.
 
 ---
 
-All projects are created by Ryan Rizky Pratama & Reja
+All projects are created by Ryan Rizky Pratama & Reja Revaldy F
