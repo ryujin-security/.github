@@ -1,28 +1,35 @@
 # Ryujin Security 🐉
 
-Ryujin Security security monitoring and management.
+Ryujin Security provides a comprehensive, modular platform for security monitoring, automated response, and management across your infrastructure.
 
 ## Our Projects
 
 ### [Ryujin Manager](https://github.com/ryujin-security/ryujin-manager)
-Core management service that handles agent communication and certificate management.
-- 🔐 Secure agent registration
-- 📜 Certificate management
-- 🔄 Real-time monitoring
-- 🛡️ TLS-encrypted communication
+Core management service for orchestrating agents, managing certificates, and providing advanced WAF protection.
+- 🔐 Secure agent registration and authentication
+- 📜 Automated certificate management (Let's Encrypt, self-signed)
+- 🌍 GeoIP enrichment and request logging
+- 🛡️ Coraza-based Web Application Firewall (WAF)
+- ⚡ Active Response automation (scripted threat mitigation)
+- 🕵️ Honeypot detection and decoy login traps
+- 📊 Centralized monitoring and alerting
 
 ### [Ryujin Agent](https://github.com/ryujin-security/ryujin-agent)
-Endpoint security and monitoring agent.
-- 🔍 File Integrity Monitoring (FIM)
-- 📊 System Inventory Collection
-- 🔒 Secure Authentication
-- 🖥️ Real-time System Monitoring
+Lightweight endpoint agent for security monitoring and automated response.
+- 🔍 File Integrity Monitoring (FIM) with real-time and scheduled scanning
+- ⚡ Command Execution Monitoring (Linux audit integration)
+- 📊 System Inventory Collection (hardware, OS, network, processes)
+- 📝 Log Collection and forwarding
+- 🔒 Secure TLS authentication and enrollment
+- ⚔️ Active Response script execution
 
 ### [Ryujin Dashboard](https://github.com/ryujin-security/ryujin-dashboard)
-Web interface for security monitoring and management.
-- 📈 Real-time Monitoring
-- 🎯 Event Visualization
-- ⚙️ Configuration Management
-- 📱 Responsive Design
+Modern web interface for real-time security monitoring and management.
+- 📈 Live event and agent monitoring
+- 🎯 Security event visualization and dashboards
+- ⚙️ Centralized configuration management
+- 📱 Responsive design for all devices
 
-All projects are created by Ryan Rizky Pratama & Reja Revaldy F 
+---
+
+All projects are created by Ryan Rizky Pratama & Reja
