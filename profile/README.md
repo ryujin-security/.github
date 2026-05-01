@@ -1,35 +1,37 @@
-# Ryujin Security 🐉
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ryujin-security/.github/refs/heads/main/picture/ryujin-logo.png" alt="Ryujin Security" width="160">
+  <br>
+  <strong>Ryujin Security</strong>
+</p>
 
-Ryujin Security provides a comprehensive, modular platform for security monitoring, automated response, and management across your infrastructure.
+# Ryujin Security
 
-## Our Projects
+Ryujin Security is an open-source security monitoring and web protection platform built around endpoint telemetry, centralized management, WAF protection, and security event visibility.
 
-### [Ryujin Manager](https://github.com/ryujin-security/ryujin-manager)
-Core management service for orchestrating agents, managing certificates, and providing advanced WAF protection.
-- 🔐 Secure agent registration and authentication
-- 📜 Automated certificate management (Let's Encrypt, self-signed)
-- 🌍 GeoIP enrichment and request logging
-- 🛡️ Coraza-based Web Application Firewall (WAF)
-- ⚡ Active Response automation (scripted threat mitigation)
-- 🕵️ Honeypot detection and decoy login traps
-- 📊 Centralized monitoring and alerting
+The project was created by **Reja Revaldy F** and **Ryan Rizky**.
 
-### [Ryujin Agent](https://github.com/ryujin-security/ryujin-agent)
-Lightweight endpoint agent for security monitoring and automated response.
-- 🔍 File Integrity Monitoring (FIM) with real-time and scheduled scanning
-- ⚡ Command Execution Monitoring (Linux audit integration)
-- 📊 System Inventory Collection (hardware, OS, network, processes)
-- 📝 Log Collection and forwarding
-- 🔒 Secure TLS authentication and enrollment
-- ⚔️ Active Response script execution
+## Repositories
 
-### [Ryujin Dashboard](https://github.com/ryujin-security/ryujin-dashboard)
-Modern web interface for real-time security monitoring and management.
-- 📈 Live event and agent monitoring
-- 🎯 Security event visualization and dashboards
-- ⚙️ Centralized configuration management
-- 📱 Responsive design for all devices
+| Repository | Description |
+| --- | --- |
+| [ryujin-agent](https://github.com/ryujin-security/ryujin-agent) | Endpoint agent for file integrity monitoring, system inventory, log collection, command monitoring, enrollment, and active response. |
+| [ryujin-manager](https://github.com/ryujin-security/ryujin-manager) | Control plane for agent enrollment, certificate management, Coraza WAF, Quickwit event shipping, Sigma alerts, honeypot handling, and notifications. |
+| [ryujin-dashboard](https://github.com/ryujin-security/ryujin-dashboard) | SvelteKit dashboard for agents, WAF sites, rules, honeypot credentials, security events, analytics, and notification settings. |
 
----
+## Platform Overview
 
-All projects are created by Ryan Rizky Pratama & Reja Revaldy F
+- Endpoint visibility through file integrity monitoring, command monitoring, inventory collection, and log collection.
+- Secure agent enrollment with certificate-based identity.
+- Web Application Firewall capabilities powered by Coraza and configurable rules.
+- Security event pipelines for WAF logs, Sigma alerts, inventory, request logs, and active response data.
+- Dashboard-driven operations for reviewing events and managing WAF configuration.
+- Notification support for Telegram and Discord.
+
+## Status
+
+Ryujin Security is under active development. The current public release focuses on the core agent, manager, and dashboard components.
+
+## Creators
+
+- Reja Revaldy F
+- Ryan Rizky
