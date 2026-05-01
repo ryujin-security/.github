@@ -4,6 +4,10 @@ Ryujin Security is an open-source security monitoring and web protection platfor
 
 The project was created by **Reja Revaldy F** and **Ryan Rizky**.
 
+## System Architecture
+<p align="center">
+<img  width="884" height="515" alt="image" src="https://github.com/user-attachments/assets/9e0e6820-1baa-4692-928e-ed53b0905770" />
+</p>
 ## Repositories
 
 | Repository                                                              | Description                                                                                                                                          |
