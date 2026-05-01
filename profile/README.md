@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ryujin-security/.github/refs/heads/main/picture/ryujin-logo.png" alt="Ryujin Security" width="160">
-  <br>
-  <strong>Ryujin Security</strong>
-</p>
-
 # Ryujin Security
 
 Ryujin Security is an open-source security monitoring and web protection platform built around endpoint telemetry, centralized management, WAF protection, and security event visibility.
