@@ -6,7 +6,7 @@ The project was created by **Reja Revaldy F** and **Ryan Rizky**.
 
 ## System Architecture
 <p align="center">
-<img  width="884" height="515" alt="image" src="https://github.com/user-attachments/assets/9e0e6820-1baa-4692-928e-ed53b0905770" />
+<img width="1040" height="625" alt="image" src="https://github.com/user-attachments/assets/def155e8-3d58-4ebc-963c-9cee57924449" />
 </p>
 ## Repositories
 
