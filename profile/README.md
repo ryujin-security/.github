@@ -1,5 +1,7 @@
 # Ryujin Security
-
+<p align="center">
+<img width="1040" height="625" alt="image" src="../picture/ryujin-banner.jpg" />
+</p>
 Ryujin Security is an open-source security monitoring and web protection platform built around endpoint telemetry, centralized management, WAF protection, and security event visibility.
 
 The project was created by **Reja Revaldy F** and **Ryan Rizky**.
